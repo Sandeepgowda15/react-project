@@ -18,3 +18,8 @@ phases:
       - echo Pushing Docker image to ECR...
       - docker push 089783390772.dkr.ecr.us-east-1.amazonaws.com/react-project:latest
       - echo Build completed successfully!
+      
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/**/*
